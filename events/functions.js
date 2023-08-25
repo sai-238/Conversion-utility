@@ -93,12 +93,12 @@ async function checkApiKeycooldown(req, res, next) {
                 APICount.count += 1;
                 await APICount.save().then(() => {
                     next();
-                });
+                });x
             }
         }
     }
 }
-
+    
 function csvToXml(csv) {
     const lines = csv.split("\n");
     const delimiter = ",";
